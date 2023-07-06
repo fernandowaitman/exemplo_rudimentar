@@ -16,7 +16,7 @@ xml_exemplo = '''
     </tag_externa>
     '''
 
-def deslocaDataPorUmaQuantidadeDeMeses(qtdeMeses, data=None):
+def desloca_data_por_uma_quantidade_de_meses(qtde_meses, data=None):
     """Desloca uma determinada data pela quantidade de meses informada.
 
     Args:
@@ -28,7 +28,7 @@ def deslocaDataPorUmaQuantidadeDeMeses(qtdeMeses, data=None):
     """
     data = data or datetime.now().date()
 
-    data_modificada = data + relativedelta(months=qtdeMeses)
+    data_modificada = data + relativedelta(months=qtde_meses)
     
     print(data_modificada.strftime("%d/%m/%Y"))
     return data_modificada
