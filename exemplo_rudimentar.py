@@ -19,12 +19,12 @@ xml_exemplo = '''
 def desloca_data_por_uma_quantidade_de_meses(qtde_meses, data=None):
 	"""Desloca uma determinada data pela quantidade de meses informada.
 
-    Args:
-        qtde_meses: int contendo a quantidade de meses que se deseja deslocar a data.
-        data: datetime.date opcional contendo a data base. Caso nao informado, assume a data atual.
+	Args:
+		qtde_meses: int contendo a quantidade de meses que se deseja deslocar a data.
+		data: datetime.date opcional contendo a data base. Caso nao informado, assume a data atual.
 
-    Return:
-        datetime.date contendo a data base deslocada pela quantidade de meses informada.
+	Return:
+		datetime.date contendo a data base deslocada pela quantidade de meses informada.
 	"""
 	data = data or datetime.now().date()
 
@@ -36,11 +36,11 @@ def desloca_data_por_uma_quantidade_de_meses(qtde_meses, data=None):
 def gera_e_imprime_dicionario_a_partir_de_xml(xml=xml_exemplo):
 	"""Gera e imprime um dicionario a partir de um xml.
 
-    Args:
-        xml: str opcional contendo um xml.
+	Args:
+		xml: str opcional contendo um xml.
 
-    Return:
-        dict criado a partir do xml passado por parâmetro, ou do xml de exemplo, caso nenhum parâmetro for passado.
+	Return:
+		dict criado a partir do xml passado por parâmetro, ou do xml de exemplo, caso nenhum parâmetro for passado.
 	"""
 	dicionario = parse(xml)
 	
